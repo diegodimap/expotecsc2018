@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tituloMostra"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="423dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        android:textColor="@color/zxing_viewfinder_laser"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSalvarNota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonSalvarNota"
+        android:layout_width="223dp"
+        android:layout_height="40dp"
+        android:onClick="salvarNotaMostra"
+        android:text="AVALIAR MOSTRA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloMostra" />
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="0dp"
+        android:layout_height="402dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/atitudeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="ATITUDE"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/atitudeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/atitudeImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouAtitude"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/habilidadesText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="HABILIDADES"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/habilidadesEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/habilidadesImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouHabilidades"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/criatividadeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="CRIATIVIDADE"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/criatividadeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/criatividadeImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouCriatividade"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/metodoText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="MÉTODO"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/metodoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/metodoImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouMetodo"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/profundidadeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="PROFUNDIDADE"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/profundidadeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/profundidadeImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouProfundidade"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/relatorioText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="RELATÓRIO"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/relatorioEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/relatorioImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouRelatorio"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/diarioText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="DIÁRIO"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/diarioEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/diarioImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouDiario"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/posterText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="POSTER"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/posterEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/posterImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouPoster"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/apresentacaoText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="APRESENTAÇÃO"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/apresentacaoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/apresentacaoImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouApresentacao"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/relevanciaText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="RELEVÂNCIA"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="217dp" />
+
+            <EditText
+                android:id="@+id/relevanciaEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+            <ImageView
+                android:id="@+id/relevanciaImage"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:onClick="clicouRelevancia"
+                app:srcCompat="@mipmap/clipart1510606249"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="255dp" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
